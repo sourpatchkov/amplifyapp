@@ -1,0 +1,17 @@
+.card-deck{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    width: 300px;
+}
+
+.collapse{
+display: flex;
+justify-content: space-between;
+}
+
+.form-inline{
+    display: flex;
+}
