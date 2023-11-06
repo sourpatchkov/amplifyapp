@@ -1,4 +1,4 @@
-
+import {Outlet, Link} from "react-router-dom";
 function Nav(){
 
 return(
@@ -10,15 +10,15 @@ return(
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto" >
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+        <Link to= "/"style={{textDecoration: 'none', padding: 5}} >Home</Link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+      <Link to= "/card"style={{textDecoration: 'none', padding: 5}} >Cards</Link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+      <Link to= "/contact"style={{textDecoration: 'none', padding: 5}} >Contact</Link>
       </li>
       
   

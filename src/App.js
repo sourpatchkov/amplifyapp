@@ -1,14 +1,25 @@
 
-import './App.css';
+import Home from './home.js';
+import Contact from './contact.js';
+import Card from './cards.js';
+import Navbar from './nav.js';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <h1>CS 230L</h1>
-      <h2>Section - 002</h2>
-      <p>WVU ID: 800398304</p>
-      <p>Hi I am Alan Pachkovskiy</p>
-    </div>
+    <BrowserRouter>
+         <Navbar />
+         <Routes>
+           <Route path="/" element={<Home />}></Route>
+           <Route path="/card" element={<Card />}></Route>
+           <Route path="/contact" element={<Contact />}></Route>
+         </Routes>
+    </BrowserRouter>
+  </div>
+ 
   );
 }
 
